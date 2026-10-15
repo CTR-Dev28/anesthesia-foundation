@@ -1,9 +1,9 @@
-/* Anesthesia Foundation service worker, version 0.1.4.
+/* Anesthesia Foundation service worker, version 0.1.5.
    Goal: the app opens with no signal (operating rooms), but a doctor with signal never keeps old dose data.
    - Pages and data (index.html, manifest): network first, 2.5 s timeout, then the cached copy.
    - Fonts and icons: cache first (they never change within a version).
    The cache name carries the version, so a new release drops the old cache on activate. */
-const VERSION = '0.1.4';
+const VERSION = '0.1.5';
 const CACHE = 'anesthesia-foundation-' + VERSION;
 const PRECACHE = [
   "./",
@@ -40,7 +40,7 @@ function networkFirst(req, timeoutMs) {
     let settled = false;
     const fromCache = () => caches.match(req, { ignoreSearch: true }).then((hit) => hit || caches.match('./index.html'));
     const timer = setTimeout(() => { if (!settled) fromCache().then((r) => { if (r && !settled) { settled = true; resolve(r); } }); }, timeoutMs);
-    fetch(req).then((res) => {
+    fetch(req.url, { cache: 'no-cache', credentials: 'same-origin' }).then((res) => {   // revalidate with the server, never a stale HTTP-cache copy
       if (res && res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(req, copy)); }
       if (!settled) { settled = true; clearTimeout(timer); resolve(res); }
     }).catch(() => {
