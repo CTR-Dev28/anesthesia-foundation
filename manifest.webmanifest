@@ -1,0 +1,39 @@
+{
+  "id": "./",
+  "name": "Anesthesia Foundation",
+  "short_name": "Anesthesia",
+  "description": "Pediatric-to-adult anesthesia dose reference with sourced doses, infusion pump rates, TIVA schemes, local anesthetic limits, airway sizes and emergency doses. Works offline. Stores no patient data.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2f6f6",
+  "theme_color": "#0a7a73",
+  "categories": [
+    "medical",
+    "health",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
