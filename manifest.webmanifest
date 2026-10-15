@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Anesthesia Foundation",
   "short_name": "Anesthesia",
-  "description": "Pediatric-to-adult anesthesia dose reference with sourced doses, infusion pump rates, TIVA schemes, local anesthetic limits, airway sizes and emergency doses. Works offline. Stores no patient data.",
+  "description": "By Dr. Cary Marlowe T. Remotigue. Pediatric-to-adult anesthesia dose reference with sourced doses, infusion pump rates, TIVA schemes, local anesthetic limits, airway sizes and emergency doses. Works offline. Stores no patient data.",
   "lang": "en",
   "dir": "ltr",
   "start_url": "./index.html",

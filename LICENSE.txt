@@ -1,0 +1,25 @@
+Anesthesia Foundation
+Copyright (c) 2026 Dr. Cary Marlowe T. Remotigue. All rights reserved.
+
+Created by Dr. Cary Marlowe T. Remotigue, founder of SynthaSuite.
+
+This software, including its source code, data compilation, text, design,
+icon and graphics, is the work of Dr. Cary Marlowe T. Remotigue and is
+protected by copyright (Republic Act No. 8293, Intellectual Property Code of
+the Philippines, and international copyright treaties).
+
+Clinicians may open and use the published app for their own clinical
+reference. No other right is granted. Without prior written permission from
+the copyright holder you may not copy, modify, republish, redistribute, sell,
+sublicense, rebrand, or create derivative works from this software or any part
+of it.
+
+The drug labels, guidelines and papers cited in the app belong to their
+respective owners and are referenced, not claimed.
+
+The app is a reference tool for qualified clinicians. It is provided "as is",
+without warranty of any kind. It does not replace the drug label,
+institutional protocols or clinical judgment, and the clinician giving a drug
+is responsible for the dose.
+
+Permission requests: contact the author through github.com/CTR-Dev28.
