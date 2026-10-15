@@ -1,9 +1,9 @@
-/* Anesthesia Foundation service worker, version 0.1.1.
+/* Anesthesia Foundation service worker, version 0.1.2.
    Goal: the app opens with no signal (operating rooms), but a doctor with signal never keeps old dose data.
    - Pages and data (index.html, manifest): network first, 2.5 s timeout, then the cached copy.
    - Fonts and icons: cache first (they never change within a version).
    The cache name carries the version, so a new release drops the old cache on activate. */
-const VERSION = '0.1.1';
+const VERSION = '0.1.2';
 const CACHE = 'anesthesia-foundation-' + VERSION;
 const PRECACHE = [
   "./",
